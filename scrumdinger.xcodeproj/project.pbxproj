@@ -15,12 +15,13 @@
 		E850E387284E072900000A54 /* scrumdinger.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E850E35B284E072800000A54 /* scrumdinger.xcdatamodeld */; };
 		E850E388284E072900000A54 /* scrumdingerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E850E35D284E072800000A54 /* scrumdingerApp.swift */; };
 		E850E389284E072900000A54 /* scrumdingerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E850E35D284E072800000A54 /* scrumdingerApp.swift */; };
-		E850E38A284E072900000A54 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E850E35E284E072800000A54 /* ContentView.swift */; };
-		E850E38B284E072900000A54 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E850E35E284E072800000A54 /* ContentView.swift */; };
+		E850E38A284E072900000A54 /* MeetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E850E35E284E072800000A54 /* MeetingView.swift */; };
+		E850E38B284E072900000A54 /* MeetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E850E35E284E072800000A54 /* MeetingView.swift */; };
 		E850E38C284E072900000A54 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = E850E35F284E072800000A54 /* Persistence.swift */; };
 		E850E38D284E072900000A54 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = E850E35F284E072800000A54 /* Persistence.swift */; };
 		E850E38E284E072900000A54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E850E360284E072900000A54 /* Assets.xcassets */; };
 		E850E38F284E072900000A54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E850E360284E072900000A54 /* Assets.xcassets */; };
+		E850E3A2284E2A4800000A54 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = E850E3A1284E2A4800000A54 /* Theme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +44,7 @@
 /* Begin PBXFileReference section */
 		E850E35C284E072800000A54 /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
 		E850E35D284E072800000A54 /* scrumdingerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scrumdingerApp.swift; sourceTree = "<group>"; };
-		E850E35E284E072800000A54 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E850E35E284E072800000A54 /* MeetingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingView.swift; sourceTree = "<group>"; };
 		E850E35F284E072800000A54 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		E850E360284E072900000A54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E850E365284E072900000A54 /* scrumdinger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = scrumdinger.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,6 +56,7 @@
 		E850E37E284E072900000A54 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E850E382284E072900000A54 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		E850E384284E072900000A54 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		E850E3A1284E2A4800000A54 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +105,9 @@
 		E850E35A284E072800000A54 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				E850E39E284E29EF00000A54 /* models */,
 				E850E35D284E072800000A54 /* scrumdingerApp.swift */,
-				E850E35E284E072800000A54 /* ContentView.swift */,
+				E850E35E284E072800000A54 /* MeetingView.swift */,
 				E850E35F284E072800000A54 /* Persistence.swift */,
 				E850E360284E072900000A54 /* Assets.xcassets */,
 				E850E35B284E072800000A54 /* scrumdinger.xcdatamodeld */,
@@ -147,6 +150,14 @@
 				E850E384284E072900000A54 /* Tests_macOSLaunchTests.swift */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		E850E39E284E29EF00000A54 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				E850E3A1284E2A4800000A54 /* Theme.swift */,
+			);
+			path = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,8 +320,9 @@
 			files = (
 				E850E386284E072900000A54 /* scrumdinger.xcdatamodeld in Sources */,
 				E850E38C284E072900000A54 /* Persistence.swift in Sources */,
+				E850E3A2284E2A4800000A54 /* Theme.swift in Sources */,
 				E850E388284E072900000A54 /* scrumdingerApp.swift in Sources */,
-				E850E38A284E072900000A54 /* ContentView.swift in Sources */,
+				E850E38A284E072900000A54 /* MeetingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,7 +333,7 @@
 				E850E387284E072900000A54 /* scrumdinger.xcdatamodeld in Sources */,
 				E850E38D284E072900000A54 /* Persistence.swift in Sources */,
 				E850E389284E072900000A54 /* scrumdingerApp.swift in Sources */,
-				E850E38B284E072900000A54 /* ContentView.swift in Sources */,
+				E850E38B284E072900000A54 /* MeetingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
