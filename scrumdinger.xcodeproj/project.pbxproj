@@ -22,14 +22,10 @@
 		E850E38E284E072900000A54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E850E360284E072900000A54 /* Assets.xcassets */; };
 		E850E38F284E072900000A54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E850E360284E072900000A54 /* Assets.xcassets */; };
 		E850E3A2284E2A4800000A54 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = E850E3A1284E2A4800000A54 /* Theme.swift */; };
-		E89597BE284FB54700DC5F99 /* DailyScrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89597BD284FB54700DC5F99 /* DailyScrum.swift */; };
-		E89597BF284FB54700DC5F99 /* DailyScrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89597BD284FB54700DC5F99 /* DailyScrum.swift */; };
-		E89597C0284FB54700DC5F99 /* DailyScrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89597BD284FB54700DC5F99 /* DailyScrum.swift */; };
-		E89597C1284FB54700DC5F99 /* DailyScrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89597BD284FB54700DC5F99 /* DailyScrum.swift */; };
-		E89597C3284FB60900DC5F99 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89597C2284FB60900DC5F99 /* CardView.swift */; };
-		E89597C4284FB60900DC5F99 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89597C2284FB60900DC5F99 /* CardView.swift */; };
-		E89597C5284FB60900DC5F99 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89597C2284FB60900DC5F99 /* CardView.swift */; };
-		E89597C6284FB60900DC5F99 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89597C2284FB60900DC5F99 /* CardView.swift */; };
+		E86B8D8D286C46C00087F2ED /* DailyScrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86B8D8C286C46C00087F2ED /* DailyScrum.swift */; };
+		E86B8D8E286C46C00087F2ED /* DailyScrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86B8D8C286C46C00087F2ED /* DailyScrum.swift */; };
+		E86B8D8F286C46C00087F2ED /* DailyScrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86B8D8C286C46C00087F2ED /* DailyScrum.swift */; };
+		E86B8D90286C46C00087F2ED /* DailyScrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86B8D8C286C46C00087F2ED /* DailyScrum.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,8 +61,7 @@
 		E850E382284E072900000A54 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		E850E384284E072900000A54 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
 		E850E3A1284E2A4800000A54 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
-		E89597BD284FB54700DC5F99 /* DailyScrum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyScrum.swift; sourceTree = "<group>"; };
-		E89597C2284FB60900DC5F99 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		E86B8D8C286C46C00087F2ED /* DailyScrum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyScrum.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,7 +116,6 @@
 				E850E35F284E072800000A54 /* Persistence.swift */,
 				E850E360284E072900000A54 /* Assets.xcassets */,
 				E850E35B284E072800000A54 /* scrumdinger.xcdatamodeld */,
-				E89597C2284FB60900DC5F99 /* CardView.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -167,7 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				E850E3A1284E2A4800000A54 /* Theme.swift */,
-				E89597BD284FB54700DC5F99 /* DailyScrum.swift */,
+				E86B8D8C286C46C00087F2ED /* DailyScrum.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -330,12 +324,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E89597C3284FB60900DC5F99 /* CardView.swift in Sources */,
 				E850E386284E072900000A54 /* scrumdinger.xcdatamodeld in Sources */,
 				E850E38C284E072900000A54 /* Persistence.swift in Sources */,
 				E850E3A2284E2A4800000A54 /* Theme.swift in Sources */,
+				E86B8D8D286C46C00087F2ED /* DailyScrum.swift in Sources */,
 				E850E388284E072900000A54 /* scrumdingerApp.swift in Sources */,
-				E89597BE284FB54700DC5F99 /* DailyScrum.swift in Sources */,
 				E850E38A284E072900000A54 /* MeetingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,11 +337,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E89597BF284FB54700DC5F99 /* DailyScrum.swift in Sources */,
 				E850E387284E072900000A54 /* scrumdinger.xcdatamodeld in Sources */,
 				E850E38D284E072900000A54 /* Persistence.swift in Sources */,
 				E850E389284E072900000A54 /* scrumdingerApp.swift in Sources */,
-				E89597C4284FB60900DC5F99 /* CardView.swift in Sources */,
+				E86B8D8E286C46C00087F2ED /* DailyScrum.swift in Sources */,
 				E850E38B284E072900000A54 /* MeetingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -357,9 +349,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E86B8D8F286C46C00087F2ED /* DailyScrum.swift in Sources */,
 				E850E379284E072900000A54 /* Tests_iOSLaunchTests.swift in Sources */,
-				E89597C0284FB54700DC5F99 /* DailyScrum.swift in Sources */,
-				E89597C5284FB60900DC5F99 /* CardView.swift in Sources */,
 				E850E377284E072900000A54 /* Tests_iOS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -368,9 +359,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E86B8D90286C46C00087F2ED /* DailyScrum.swift in Sources */,
 				E850E385284E072900000A54 /* Tests_macOSLaunchTests.swift in Sources */,
-				E89597C1284FB54700DC5F99 /* DailyScrum.swift in Sources */,
-				E89597C6284FB60900DC5F99 /* CardView.swift in Sources */,
 				E850E383284E072900000A54 /* Tests_macOS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

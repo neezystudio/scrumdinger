@@ -2,11 +2,10 @@
 //  DailyScrum.swift
 //  scrumdinger
 //
-//  Created by Victor Ndirangu on 07/06/2022.
+//  Created by victorndirangu on 29/06/2022.
 //
 
 import Foundation
-
 
 
 struct DailyScrum {
@@ -15,6 +14,8 @@ struct DailyScrum {
     var lengthInMinutes: Int
     var theme: Theme
 }
+
+
 extension DailyScrum {
     static let sampleData: [DailyScrum] =
     [
